@@ -35,6 +35,9 @@
             <span class="profile-id">Giảng viên · {{ $userCode ?? 'GV00128' }}</span>
           </div>
         </a>
+        <a href="{{ route('logout') }}" class="icon-button" aria-label="Đăng xuất" title="Đăng xuất" style="text-decoration: none; color: #dc2626; font-size: 15px;">
+          ⎋
+        </a>
       </div>
     </header>
 

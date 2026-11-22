@@ -162,6 +162,7 @@
         <button class="icon-button" aria-label="Trợ giúp">?</button>
         <a href="/sinhvien/thong-bao" class="icon-button notification-button" aria-label="Thông báo" style="text-decoration:none; cursor:pointer;">♧<span class="notification-dot"></span></a>
         <a href="/sinhvien/ho-so" class="profile" style="text-decoration:none; cursor:pointer;"><div class="avatar">NA</div><div class="profile-name">Nguyễn An<span class="profile-id">Sinh viên · 22A10001</span></div></a>
+        <a href="{{ route('logout') }}" class="icon-button" aria-label="Đăng xuất" title="Đăng xuất" style="text-decoration:none; color:#dc2626; font-size:15px;">⎋</a>
       </div>
     </header>
 

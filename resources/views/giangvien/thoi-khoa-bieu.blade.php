@@ -42,26 +42,6 @@
     </div>
   </section>
 
-  <!-- Summary Row (3 thẻ kết nối điều hướng) -->
-  <section class="summary-row">
-    <div class="summary-card">
-      <div class="summary-value">{{ $buoiDayTuan }} buổi dạy</div>
-      <div class="summary-label">Trong tuần đang xem</div>
-    </div>
-    <div class="summary-card">
-      <a href="{{ route('giangvien.lophocphan') }}" style="text-decoration: none; color: inherit; display: block;">
-        <div class="summary-value" style="color: #245b8f;">{{ $lopDuocPhanCong }} lớp</div>
-        <div class="summary-label">Được phân công học kỳ này (Xem danh sách →)</div>
-      </a>
-    </div>
-    <div class="summary-card">
-      <a href="{{ route('giangvien.lophocphan', ['status' => 'Đang nhập']) }}" style="text-decoration: none; color: inherit; display: block;">
-        <div class="summary-value" style="color: #c9584d;">{{ $lopCanCapNhatDiem }} lớp</div>
-        <div class="summary-label">Cần cập nhật điểm (Xem chi tiết →)</div>
-      </a>
-    </div>
-  </section>
-
   <!-- Calendar Weekly Grid Card -->
   <section class="calendar-card">
     <div class="calendar-heading">

@@ -8,10 +8,15 @@ use App\Http\Controllers\GiangVien\ThoiKhoaBieuController as GiangVienThoiKhoaBi
 use App\Http\Controllers\GiangVien\DiemController as GiangVienDiemController;
 use App\Http\Controllers\GiangVien\ThongBaoController as GiangVienThongBaoController;
 use App\Http\Controllers\GiangVien\HoSoController as GiangVienHoSoController;
+use App\Http\Controllers\Auth\AuthController;
 
+// --- AUTHENTICATION ROUTES ---
 Route::get('/', function () {
-    return redirect('/giang-vien/dashboard');
+    return redirect()->route('login');
 });
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+Route::match(['get', 'post'], '/logout', [AuthController::class, 'logout'])->name('logout');
 
 // --- LUỒNG GIẢNG VIÊN ---
 Route::prefix('giang-vien')->name('giangvien.')->group(function () {
